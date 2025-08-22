@@ -7,12 +7,14 @@ type is a built in function that labels the datatype
 
 """
 
-def whatType (userInput):
+def whatType(userInput):
     print(type(userInput))
 
-whatType (3)
-whatType (3.0)
-whatType ("anna")
-whatType (True)
-whatType ('a')
+whatType(3)
+whatType(3.0)
+whatType("anna")
+whatType(True)
+whatType('a')
+
+#why do i have to do everything for you???  =)
 
