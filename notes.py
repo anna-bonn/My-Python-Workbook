@@ -16,6 +16,9 @@ whatType("anna")
 whatType(True)
 whatType('a')
 
+#why do i have to do everything for you???  =)
+
+#8/25/25
 
 message = """this is a
 multilined message
@@ -42,5 +45,47 @@ print (2+2)
 print ("hello")
 print (len("hello"))
 
-#why do i have to do everything for you???  =)
+#8/25/25 
+
+myName = "anna"
+print (myName * 5)
+#str is casting the integer data type to a string
+#so you can concatenate two strings together
+print(myName + str(5))
+
+"""
+addition to numbers and strings
+subtraction to numbers only
+division
+/ typical division - the answer is always a float
+// floor division - to the largest whole integer, answer is an int
+% modulus operator - finds the remainder of the division, answer is an int
+mulitiplication to number and strings
+* multiplies only
+** exponential 
+"""
+
+#8/28/25
+
+age = 48
+print (type(age))
+age = (float(age))
+print (type(age))
+
+#create a list of new emails
+
+studentNames = ["Poly", "ana", "chris", "tommy"]
+emailAddress = "@ursulineacademy.org"
+
+for student in studentNames:
+    email = student+emailAddress
+    print(email)
+
+aList = ["poly", "anna"]
+print(aList)
+
+userName = input("What is your name? ")
+userAddress = input("What is your address? ")
+
+print(userName, userAddress)
 
