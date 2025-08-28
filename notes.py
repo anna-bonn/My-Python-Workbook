@@ -16,5 +16,31 @@ whatType("anna")
 whatType(True)
 whatType('a')
 
+
+message = """this is a
+multilined message
+to my bestie
+"""
+
+print(message)
+
+print (42000)
+print(42,000)
+print(42.000)
+
+name = "anna"
+newName = "annie"
+name = newName
+newName = name
+
+print (name)
+print (newName)
+
+classOf2026 = ["Student 1", "Student 2"]
+
+print (2+2)
+print ("hello")
+print (len("hello"))
+
 #why do i have to do everything for you???  =)
 
