@@ -52,6 +52,8 @@ Hint: There are 43,560 square feet in an acre
 fieldLength = float(input("What is the length of the field? "))
 fieldWidth = float(input("What is the width of the field? "))
 areaField = fieldLength*fieldWidth
+print (areaField, "feet")
+
 
 
 """
