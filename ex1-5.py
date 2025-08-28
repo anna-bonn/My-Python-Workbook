@@ -20,6 +20,10 @@ The program should respond with a message that says hello to
 the user, using his or her name.  (9 lines)
 """
 
+userName = input("What is your name? ")
+print ("Hello " + userName)
+
+
 """
 Exercise 3:  Area of a Room
 Write a program that asks the user to enter the width and 
@@ -31,6 +35,12 @@ either feet or meters, depending on which unit you are more
 comfortable working with.  (13 lines)
 """
 
+roomLength = float(input("What is the length of the room? "))
+roomWidth = float(input("What is the length of the room? "))
+
+areaRoom = (roomLength*roomWidth)
+print(areaRoom, " meters")
+
 """
 Exercise 4:  Area of a Field
 Create a program that reads the length and width of a 
@@ -38,6 +48,11 @@ farmer’s field from the user in feet.  Display the
 area of the field in acres.  
 Hint: There are 43,560 square feet in an acre
 """
+
+fieldLength = float(input("What is the length of the field? "))
+fieldWidth = float(input("What is the width of the field? "))
+areaField = fieldLength*fieldWidth
+
 
 """
 Exercise 5:  Bottle Deposits

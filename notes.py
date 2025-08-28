@@ -89,3 +89,19 @@ userAddress = input("What is your address? ")
 
 print(userName, userAddress)
 
+#calculate the area of a circle
+radius = float(input("What is the radius? "))
+
+areaCircle = 3.14*(radius**2)
+
+print(areaCircle)
+
+
+principal = 10000
+n = 12
+r = 0.08
+t = float(input("What is the number of years the money will be compounded for? " ))
+
+finalAmount = principal*(1+(r/n))**(n*t)
+
+print(finalAmount)
