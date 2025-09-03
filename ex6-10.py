@@ -9,6 +9,13 @@ both the tax and the tip.  Format the output so that all of the values
 are displayed using two decimal places.  (17 lines)
 """
 
+mealCost = float(input("How much was your meal? "))
+mealTax = mealCost * 1.0575
+mealTip = mealCost * 0.18
+totalCost = mealTax + mealTip
+
+print(totalCost)
+
 """
 Exercise 7:  Sum of the First n Positive Integers
 Write a program that reads a positive integer, n, from the user and 
@@ -17,6 +24,10 @@ first n positive integers can be computed using the formula:
 sum = (n*(n+1))/2
 (12 lines)
 """
+n =float(input("Input a positive integer. "))
+sum = (n*(n+1))/2
+
+
 
 """
 Exercise 8:  Widgets and Gizmos
@@ -26,6 +37,14 @@ the number of gizmos in an order from the user.  Then your program should
 compute and display the total weight of the order.  (15 lines)
 
 """
+
+def weight ():
+    widget = 75
+    gizmo = 112
+    orderGizmo = float(input("How many did you gizmos order? "))
+    orderWidget = float(input("How many "))
+
+
 
 """
 Exercise 9:  Compound Interest

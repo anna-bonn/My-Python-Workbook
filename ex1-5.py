@@ -7,6 +7,11 @@ on the outside of an envelope.  Your program does not need to
 read any input from the user.  (9 lines)
 """
 
+address = """Anna Bonn
+8854 Roundhill Rd
+Cincinnati OH 45236
+"""
+print(address)
 
 """
 Exercise 2:  Hello
@@ -14,6 +19,9 @@ Write a program that asks the user to enter his or her name.
 The program should respond with a message that says hello to 
 the user, using his or her name.  (9 lines)
 """
+
+userName = input("What is your name? ")
+print ("Hello " + userName)
 
 
 """
@@ -27,6 +35,12 @@ either feet or meters, depending on which unit you are more
 comfortable working with.  (13 lines)
 """
 
+roomLength = float(input("What is the length of the room? "))
+roomWidth = float(input("What is the length of the room? "))
+
+areaRoom = (roomLength*roomWidth)
+print(areaRoom, " meters")
+
 """
 Exercise 4:  Area of a Field
 Create a program that reads the length and width of a 
@@ -34,6 +48,15 @@ farmer’s field from the user in feet.  Display the
 area of the field in acres.  
 Hint: There are 43,560 square feet in an acre
 """
+
+fieldLength = float(input("What is the length of the field? "))
+fieldWidth = float(input("What is the width of the field? "))
+areaField = fieldLength*fieldWidth
+print (areaField, " square feet")
+
+measureAcres = areaField / 43560
+print (measureAcres, "acres")
+
 
 """
 Exercise 5:  Bottle Deposits
