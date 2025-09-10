@@ -72,6 +72,17 @@ those containers.  Format the output so that it includes a dollar
 sign and always displays exactly two decimal places.  (15 lines)
 """
 
+def bottleRefund ():
+    numOneLiterBottle = int(input("How many bottles contain one liter or less? "))
+    numMoreOneLiterBottle = int(input("How many bottles contain more than one liter? "))
+    oneRefund = (numOneLiterBottle * 0.10)
+    moreRefund = (numMoreOneLiterBottle * 0.25)
+    totalRefund = (oneRefund + moreRefund)
+    print(totalRefund)
+    
+bottleRefund()
+
+
 
 def print_hi(name):
     print(f"Hi, {name}")
