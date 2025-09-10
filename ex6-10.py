@@ -8,13 +8,13 @@ meal amount (without tax).  The output from your program should include
 both the tax and the tip.  Format the output so that all of the values
 are displayed using two decimal places.  (17 lines)
 """
+def ex6():
+    mealCost = float(input("How much was your meal? "))
+    mealTax = mealCost * 1.0575
+    mealTip = mealCost * 0.18
+    totalCost = mealTax + mealTip
 
-mealCost = float(input("How much was your meal? "))
-mealTax = mealCost * 1.0575
-mealTip = mealCost * 0.18
-totalCost = mealTax + mealTip
-
-print(totalCost)
+    print(totalCost)
 
 """
 Exercise 7:  Sum of the First n Positive Integers
@@ -24,8 +24,9 @@ first n positive integers can be computed using the formula:
 sum = (n*(n+1))/2
 (12 lines)
 """
-n =float(input("Input a positive integer. "))
-sum = (n*(n+1))/2
+def ex7():
+    n =float(input("Input a positive integer. "))
+    sum = (n*(n+1))/2
 
 
 
@@ -38,11 +39,17 @@ compute and display the total weight of the order.  (15 lines)
 
 """
 
-def weight ():
+def weight():
     widget = 75
     gizmo = 112
-    orderGizmo = float(input("How many did you gizmos order? "))
-    orderWidget = float(input("How many "))
+    orderGizmo = float(input("How many gizmos did you order? "))
+    orderWidget = float(input("How many widgets did you order? "))
+    widgetWeight = (orderWidget * widget)
+    gizmoWeight = (orderGizmo * gizmo)
+    totalWeight = (widgetWeight + gizmoWeight,  "grams")
+    print (totalWeight)
+    
+#weight()
 
 
 
@@ -56,7 +63,19 @@ your program should compute and display the amount in the savings account after
 1, 2, and 3 years.  Display each amount so that it is rounded to 2 decimal 
 places.  (19 lines)
 """
+def interest():
+    p = float(input("How much money are you entering? "))
+    n = 1
+    r = 0.04
+    t = [1,2,3]
+    
+    for i in t:
+        a = p*(1+(r/n))**(n*i)
+        #print(i, type(i))
+        print(a)
 
+interest()
+    
 """
 Exercise 10:  Arithmetic
 Create a program that reads two integers, a and b, from the user.  Your program
@@ -72,6 +91,12 @@ should compute and display:
 Hint:  you will probably find the log10 function in the math module helpful
 for computing the second last item in the list.
 """
+import math
+
+def arithmetic():
+    a = float(input("What is the value of a?"))
+    b = float(input("What is the value of b?"))
+
 
 if __name__ == "__main__":
     print("Hi there!")

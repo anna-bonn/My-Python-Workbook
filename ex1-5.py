@@ -78,7 +78,7 @@ def bottleRefund ():
     oneRefund = (numOneLiterBottle * 0.10)
     moreRefund = (numMoreOneLiterBottle * 0.25)
     totalRefund = (oneRefund + moreRefund)
-    print(totalRefund)
+    print("$", totalRefund)
     
 bottleRefund()
 

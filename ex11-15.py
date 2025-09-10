@@ -7,6 +7,18 @@ research skills to determine how to convert from MPG to L/100km.
 Then create a program that reads a value from the user in American units
 and display the equivalent fuel efficiency in Canadian units.
 """
+#1 gal = 3.78541 L
+#100km = 62.1371 mi
+#1mpg = 235.215L/100km
+
+
+def canadianUnits():
+    mpg = float(input("How many miles per gallon do you get? "))
+    conversion = mpg*235.215
+    print(conversion, "L/100km")
+   
+canadianUnits()    
+
 
 """
 Exercise 12:  Distance Between Two Points on Earth
@@ -35,6 +47,8 @@ the distance with the formula discussed previously.  The math module
 contains a function named RADIANS which converts from degrees to radians.
 """
 
+
+
 """
 Exercise 13: Making Change
 Consider the software that runs on a self-checkout machine.  One task that
@@ -44,7 +58,7 @@ when the shopper pays for a purchase with cash.
 Write a program that begins by reading a number of cents from the user
 as an integer.  Then your program should compute and display the 
 denominations of the coins that should be used to give that amount 
-of change  to the shopper.  The change should be given using as 
+of change  to the shoper.  The change should be given using as 
 few coins as possible.  Assume that the machine is loaded with pennies,
 nickels, dimes, quarters, loonies and toonies.
 
