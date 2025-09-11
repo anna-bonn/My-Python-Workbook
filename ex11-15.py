@@ -46,8 +46,13 @@ need to convert the user's input from degrees to radians before computing
 the distance with the formula discussed previously.  The math module 
 contains a function named RADIANS which converts from degrees to radians.
 """
-
-
+def earthDistance():
+    t1 = float(input("What is the first latitude?"))
+    t2 = float(input("What is the first longitude?"))
+    g1 = float(input("What is the second latitude?"))
+    g2 = float(input("What is the second longitude?"))
+    distance = 6371.01 x arccos(sin(t1) x sin(t2) + cos(t1) x cos(t2) x cos(g1-g2))
+    
 
 """
 Exercise 13: Making Change

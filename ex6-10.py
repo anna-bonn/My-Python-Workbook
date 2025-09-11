@@ -15,6 +15,8 @@ def ex6():
     totalCost = mealTax + mealTip
 
     print(totalCost)
+    
+
 
 """
 Exercise 7:  Sum of the First n Positive Integers
@@ -74,7 +76,7 @@ def interest():
         #print(i, type(i))
         print(a)
 
-interest()
+#interest()
     
 """
 Exercise 10:  Arithmetic
@@ -96,6 +98,15 @@ import math
 def arithmetic():
     a = float(input("What is the value of a?"))
     b = float(input("What is the value of b?"))
+    sum = (a+b)
+    diff = (a-b)
+    quot = (a/b)
+    remain = (a%b)
+    log10 = math.log(a)
+    expo = a**b
+    print(sum, diff, quot, remain, log10, expo)
+    
+arithmetic()  
 
 
 if __name__ == "__main__":
