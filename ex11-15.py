@@ -1,3 +1,5 @@
+import math
+
 """
 Exercise 11: Fuel Efficiency
 In the United States, fuel efficiency for vehicles is normally expressed
@@ -51,8 +53,10 @@ def earthDistance():
     t2 = float(input("What is the first longitude?"))
     g1 = float(input("What is the second latitude?"))
     g2 = float(input("What is the second longitude?"))
-    distance = 6371.01 x arccos(sin(t1) x sin(t2) + cos(t1) x cos(t2) x cos(g1-g2))
-    
+    distance = 6371.01 * math.acos(math.sin(t1) * math.sin(t2) + math.cos(t1) * math.cos(t2) * math.cos(g1-g2))
+    print (distance)
+
+#earthDistance()
 
 """
 Exercise 13: Making Change
@@ -74,6 +78,9 @@ It's name is derived from the combination of the number two
 and the name of the loonie.
 """
 
+
+
+
 """
 Exercise 14:  Height Units
 Many people think about their height in feet and inches, even in some
@@ -86,6 +93,16 @@ compute and display the equivalent number of centimeters.
 One foot is 12 inches.  One in ch is 2.54 centimeters.
 """
 
+def height ():
+    feet = float(input("How many feet tall?"))
+    inch = float(input("How many inches tall?"))
+    conv = feet * 12 *2.54
+    cent = inch * 2.54
+    total = conv = cent
+    print(total, "cm")
+    
+#height()
+
 """
 Exercise 15:  Distance Units
 In this exercise, you will create a program that begins by reading
@@ -97,6 +114,16 @@ the equivalent distance in inches, yards, and miles.
 36 inches = 1 yard = 0.00056818 miles
 63360 inches = 1760 yards = 1 mile
 """
+def distance ():
+    feet = float(input("how many feet?"))
+    inch = feet * 12
+    print(inch, "inches")
+    yards = feet/3
+    print(yards,"yards")
+    miles = feet / 5280
+    print(miles, "miles")
+
+distance()
 
 if __name__ == "__main__":
     print("Hello World!")
